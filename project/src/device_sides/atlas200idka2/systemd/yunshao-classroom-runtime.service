@@ -1,5 +1,5 @@
 [Unit]
-Description=MicroVisSpec Atlas classroom behavior runtime
+Description=Yunshao Atlas classroom behavior runtime
 After=network-online.target yunshao-agent.service
 Wants=network-online.target yunshao-agent.service
 

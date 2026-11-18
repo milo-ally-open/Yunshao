@@ -1,4 +1,4 @@
-# MicroVisSpec 部署指南
+# Yunshao（云哨）部署指南
 
 本文介绍无 Docker 的单机部署：五个 Go 服务各自一个二进制，Web/PWA 使用静态文件，Nginx、PostgreSQL、Mosquitto、MediaMTX 在 Linux 主机原生运行。Atlas 端模型与 agent 的安装步骤见 [Atlas 工程 README](project/src/device_sides/atlas200idka2/README.md)。
 
@@ -23,8 +23,8 @@ sudo systemctl enable --now postgresql mosquitto
 ## 2. 获取源码并构建
 
 ```sh
-git clone https://github.com/milo-ally-open/MicroVisSpec.git
-cd MicroVisSpec
+git clone https://github.com/milo-ally-open/Yunshao.git
+cd Yunshao
 ```
 
 在 Linux amd64 构建五个 Go 可执行文件：

@@ -1,5 +1,5 @@
 [Unit]
-Description=MicroVisSpec device service
+Description=Yunshao device service
 After=network-online.target postgresql.service mosquitto.service microvisspec-media.service
 Wants=network-online.target
 Requires=postgresql.service mosquitto.service

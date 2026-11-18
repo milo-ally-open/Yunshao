@@ -1,4 +1,4 @@
--- Read-only expand/backfill audit for a migrated MicroVisSpec PostgreSQL DB.
+-- Read-only expand/backfill audit for a migrated Yunshao PostgreSQL DB.
 -- Run with: psql "<database connection string>" -v ON_ERROR_STOP=1 -f project/scripts/audit_workspace_migration.sql
 -- This reports counts only; it never repairs data or changes schema.
 BEGIN TRANSACTION READ ONLY;

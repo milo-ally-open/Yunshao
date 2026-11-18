@@ -1,6 +1,6 @@
 # 后端服务运行说明
 
-MicroVisSpec 后端采用主机原生部署。auth、device、event、media、push 五个 Go 服务各构建为一个 Linux amd64 二进制，由 systemd 管理；PostgreSQL 和 Mosquitto 作为主机服务。Web/Nginx 与整机部署步骤见仓库根目录 [DEPLOY.md](../../../DEPLOY.md)。
+Yunshao 后端采用主机原生部署。auth、device、event、media、push 五个 Go 服务各构建为一个 Linux amd64 二进制，由 systemd 管理；PostgreSQL 和 Mosquitto 作为主机服务。Web/Nginx 与整机部署步骤见仓库根目录 [DEPLOY.md](../../../DEPLOY.md)。
 
 ## 构建
 

@@ -1,6 +1,6 @@
-# MicroVisSpec Atlas 200I DK A2 边缘运行时
+# Yunshao Atlas 200I DK A2 边缘运行时
 
-本目录是 MicroVisSpec 面向 Atlas 200I DK A2（Ascend 310B4）的可部署工程。C++ 源码使用 `microvis` 命名空间，构建产物为 `microvisspec-agent` 和 `microvisspec-classroom-runtime`，systemd unit 的产品描述和 udev 规则使用 `MicroVisSpec` 名称。unit 文件名 `yunshao-agent.service`、`yunshao-classroom-runtime.service` 是为兼容已安装设备保留的系统接口。服务账号/组 `yunshao`、`/etc/yunshao` 与 `/var/lib/yunshao` 路径也暂时保留；新的 `MICROVIS_*` 环境变量优先读取，旧 `YUNSHAO_*` 变量继续作为回退。两进程共享本机配置及模型目录，通过 `/run/yunshao/agent.sock` 传递命中事件。模型后端通过 `IAIModel` 插件接口装载，Atlas 实现使用 AscendCL/DVPP，不依赖 AX650 SDK。
+本目录是 Yunshao（云哨）面向 Atlas 200I DK A2（Ascend 310B4）的可部署工程。C++ 源码使用 `microvis` 命名空间，当前可执行文件名为 `microvisspec-agent` 和 `microvisspec-classroom-runtime`；systemd unit 的产品描述和 udev 规则使用 Yunshao 品牌。服务单元、账号/组、配置与数据目录以 `yunshao` 命名，两进程共享本机配置及模型目录，并通过 `/run/yunshao/agent.sock` 传递命中事件。设备配置优先读取 `MICROVIS_*` 环境变量，同时支持 `YUNSHAO_*` 别名。模型后端通过 `IAIModel` 插件接口装载，Atlas 实现使用 AscendCL/DVPP，不依赖 AX650 SDK。
 
 ## 从 Demo 到产品运行时
 
@@ -72,7 +72,7 @@ Atlas RTSP 输出地址需由 media-service 所在网络实际可达。以板卡
 }
 ```
 
-将清单和对应 OM 复制到 Atlas 后，以 MicroVisSpec 设备端兼容服务账号 `yunshao` 执行：
+将清单和对应 OM 复制到 Atlas 后，以 Yunshao 设备端兼容服务账号 `yunshao` 执行：
 
 ```bash
 sudo -u yunshao /usr/local/bin/microvisspec-agent model install --manifest /path/to/model_classroom_behavior_detection.manifest.json --model /path/to/yolo11n_classroom_behavior_best.om

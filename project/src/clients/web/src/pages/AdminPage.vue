@@ -68,7 +68,7 @@ onMounted(load)
 
 <template>
   <main class="admin-shell">
-    <header class="admin-header"><div><span class="eyebrow">MICROVISSPEC PLATFORM</span><h1>平台管理</h1><p>账号、服务健康与安全审计</p></div><div><span class="admin-identity">{{ authState.user?.username }}</span><button class="button button--secondary" @click="signOut">退出登录</button></div></header>
+    <header class="admin-header"><div><span class="eyebrow">YUNSHAO PLATFORM</span><h1>平台管理</h1><p>账号、服务健康与安全审计</p></div><div><span class="admin-identity">{{ authState.user?.username }}</span><button class="button button--secondary" @click="signOut">退出登录</button></div></header>
     <div v-if="error" class="notice notice--error" role="alert">{{ error }}</div>
     <div v-if="message" class="notice notice--success" role="status">{{ message }}</div>
 

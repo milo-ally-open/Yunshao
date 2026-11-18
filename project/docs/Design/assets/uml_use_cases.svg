@@ -11,7 +11,7 @@
 <text x="42" y="48" class="title" text-anchor="start">三类用户 Web/PWA 用例图</text>
 <text x="42" y="76" class="sub" text-anchor="start">系统边界内覆盖角色日常业务；首个管理员引导和主机部署/重启走受控运维流程。</text>
 <rect x="300" y="92" width="1370" height="1390" rx="14" class="system"/>
-<text x="330" y="128" class="h" text-anchor="start">MicroVisSpec Web App / PWA</text>
+<text x="330" y="128" class="h" text-anchor="start">Yunshao Web App / PWA</text>
 <rect x="340" y="155" width="600" height="400" rx="18" fill="#f7f9fc" stroke="#c4d0dc" stroke-width="1.5"/>
 <text x="360" y="185" class="h" text-anchor="start">管理员控制台</text>
 <rect x="340" y="585" width="600" height="850" rx="18" fill="#f7f9fc" stroke="#c4d0dc" stroke-width="1.5"/>

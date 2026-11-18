@@ -14,8 +14,8 @@ withDefaults(defineProps<{
       <img src="/logo.png" alt="">
     </span>
     <span class="brand-lockup__copy">
-      <strong>MicroVisSpec</strong>
-      <small>边缘智能识别，云端统一处置</small>
+      <strong>Yunshao</strong>
+      <small>云哨 · 边缘智能识别，云端统一处置</small>
     </span>
   </span>
 </template>

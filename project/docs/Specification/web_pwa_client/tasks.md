@@ -15,7 +15,7 @@
 - [ ] **T-07 前端组件/API/PWA 集成验证** — 建立并锁定 Vue-compatible 测试依赖及 `npm test` 脚本；覆盖路由认证、CSRF、错误/空态、规则默认关闭、事件处置、Push 点击回跳、缓存策略和桌面/窄屏浏览器流程；覆盖 REQ-01、REQ-02、REQ-03、REQ-04、REQ-05 / AC-01.1、AC-01.2、AC-01.3、AC-02.1、AC-02.2、AC-02.3、AC-02.4、AC-03.1、AC-03.2、AC-03.3、AC-03.4、AC-04.1、AC-04.2、AC-04.3、AC-05.1、AC-05.2；依赖 T-01–T-06。
 - [ ] **T-10 设备详情 RTSP 来源表单精简** — 加载 media-service status 中已保存的 RTSP URL；仅保留 URL 输入、校验和保存状态，移除来源用户名/密码字段；验证凭据/非法 URL 拒绝、跨账号错误展示和来源正常应用；覆盖 REQ-02 / AC-02.5；依赖 media-service T-01/T-02 与 device-service T-07。
 - [ ] **T-11 Web/PWA 品牌统一** — 使用仓库项目 Logo 替换品牌区占位标记，并在桌面/手机工作台及登录/注册页显示完整座右铭；覆盖 REQ-06 / AC-06.5。
-- [ ] **T-12 Web/PWA 展品视觉统一** — 以 `readme/microvisspec-exhibit.html` 为视觉参照，统一暖纸色、墨色导航、森林绿强调色和标题层级；检查业务页、认证页、离线提示及更新提示，保持页面行为不变；覆盖 REQ-06 / AC-06.6。
+- [ ] **T-12 Web/PWA 展品视觉统一** — 以 `readme/yunshao-exhibit.html` 为视觉参照，统一暖纸色、墨色导航、森林绿强调色和标题层级；检查业务页、认证页、离线提示及更新提示，保持页面行为不变；覆盖 REQ-06 / AC-06.6。
 - [ ] **T-13 Web/PWA 局域网入口配置** — 由主机 Nginx 托管静态站点并代理 loopback Go 服务；HTTPS 证书 SAN、PUBLIC_ORIGIN、MediaMTX 来源/WebRTC candidates 与主机防火墙说明保持一致；覆盖 REQ-07 / AC-07.1、AC-07.2、AC-07.3。
 - [ ] **T-15 网页激活与设备期限续期** — 设备详情提供无限期/自定义分钟、小时、天选择；提交无秘密值的激活请求并轮询 `pending`、`syncing`、完成状态；移除用户可见票据和命令行，MQTT 凭据仅由 Atlas agent 经 HTTPS 领取并由 agent 确认；覆盖 REQ-02 / AC-02.6、AC-02.7、AC-02.8；依赖 device-service T-08 与 Atlas agent 轮询流程。
 - [ ] **T-16 网页 SSH 设备首次接入** — 设备详情提供 SSH 用户名/密码表单、设备指纹确认和安全阶段进度；仅通过设备服务启动登记 IP 的固定端口 SSH 任务，清空密码且不持久化；覆盖 REQ-08 / AC-08.1、AC-08.2、AC-08.3、AC-08.4、AC-08.5；依赖 device-service T-09。

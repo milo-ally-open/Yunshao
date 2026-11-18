@@ -563,7 +563,7 @@ func (a *App) executeProvisioning(ctx context.Context, job ProvisioningJob, devi
 		case marker == "__MICROVISSPEC_STAGE:checking_board__":
 			_ = a.setProvisioningStage(job.ID, "checking", "正在检查 Atlas 与 CANN 环境")
 		case marker == "__MICROVISSPEC_STAGE:installing_agent__":
-			_ = a.setProvisioningStage(job.ID, "installing", "正在构建并安装 MicroVisSpec agent")
+			_ = a.setProvisioningStage(job.ID, "installing", "正在构建并安装 Yunshao agent")
 		case marker == "__MICROVISSPEC_STAGE:configuring_tls__":
 			_ = a.setProvisioningStage(job.ID, "configuring", "正在配置设备安全证书")
 		case marker == sshCAInputMarker:
@@ -732,11 +732,11 @@ func provisioningSafeError(err error) (string, string) {
 	case "build_dependencies_unavailable":
 		return code, "设备无法安装构建依赖，请检查园区软件源或网络后重试"
 	case "agent_build_failed":
-		return code, "MicroVisSpec agent 构建失败，请检查设备 CANN 开发环境和系统依赖"
+		return code, "Yunshao agent 构建失败，请检查设备 CANN 开发环境和系统依赖"
 	case "atlas_groups_missing":
 		return code, "Atlas 缺少 CANN 运行用户组，请联系管理员修复 CANN 安装"
 	case "agent_state_path_invalid":
-		return code, "MicroVisSpec agent 状态目录不可用，请联系管理员检查设备配置"
+		return code, "Yunshao agent 状态目录不可用，请联系管理员检查设备配置"
 	case "activation_failed":
 		return code, "设备身份签发或启动失败，请检查 Atlas 到云端 HTTPS 与 MQTT 网络后重试"
 	case "device_state_changed":
@@ -748,7 +748,7 @@ func provisioningSafeError(err error) (string, string) {
 	case "package_manager_unsupported":
 		return code, "设备缺少可用的软件包管理器，无法自动安装 agent 构建依赖"
 	case "systemd_unavailable":
-		return code, "设备未运行 systemd，无法自动启用 MicroVisSpec agent 服务"
+		return code, "设备未运行 systemd，无法自动启用 Yunshao agent 服务"
 	case "provisioning_timeout":
 		return code, "设备接入超过 30 分钟仍未完成，请检查设备网络、软件源和 CANN 环境后重试"
 	case "provisioning_cancelled":

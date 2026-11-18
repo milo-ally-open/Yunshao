@@ -1,5 +1,5 @@
 [Unit]
-Description=MicroVisSpec media service
+Description=Yunshao media service
 After=network-online.target postgresql.service mediamtx.service
 Wants=network-online.target
 Requires=postgresql.service mediamtx.service

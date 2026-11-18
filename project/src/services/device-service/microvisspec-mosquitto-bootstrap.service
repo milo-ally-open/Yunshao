@@ -1,5 +1,5 @@
 [Unit]
-Description=Initialize MicroVisSpec Mosquitto service identities and ACLs
+Description=Initialize Yunshao Mosquitto service identities and ACLs
 After=mosquitto.service
 Requires=mosquitto.service
 
